@@ -6,7 +6,7 @@ apt-get update
 apt-get install python-software-properties -y
 
 # Install cutting edge node.js
-add-apt-repository ppa:chris-lea/node.js-devel
+add-apt-repository ppa:chris-lea/node.js-devel -y
 
 # Refresh stuff.
 apt-get update
@@ -15,4 +15,6 @@ apt-get update
 apt-get install build-essential g++ vim git curl nodejs -y
 
 # Just override node alias.
-echo "alias node='node --harmony'" >> /home/ubuntu/.bash_profile
+echo "alias node='node --harmony'" >> /home/vagrant/.bash_profile
+
+#
