@@ -14,3 +14,5 @@ apt-get update
 # Install some stuff.
 apt-get install build-essential g++ vim git curl nodejs -y
 
+# Just override node alias.
+echo "alias node='node --harmony'" >> /home/ubuntu/.bash_profile
