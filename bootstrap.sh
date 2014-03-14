@@ -7,12 +7,13 @@ apt-get install python-software-properties -y
 
 # Install cutting edge node.js
 add-apt-repository ppa:chris-lea/node.js-devel -y
+add-apt-repository ppa:couchdb/stable -y
 
 # Refresh stuff.
 apt-get update
 
 # Install some stuff.
-apt-get install build-essential g++ vim git curl nodejs -y
+apt-get install build-essential g++ vim git curl nodejs couchdb -y
 
 # Just override node alias.
 echo "alias node='node --harmony'" >> /home/vagrant/.bash_profile
